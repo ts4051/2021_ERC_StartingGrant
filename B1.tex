@@ -1,0 +1,682 @@
+
+\documentclass[a4paper,11pt]{article}
+
+\usepackage{amsmath}
+\usepackage{bm}
+\usepackage{caption}
+\usepackage{colortbl}
+\usepackage{enumitem}
+\usepackage{etaremune}
+\usepackage{eurosym}
+\usepackage{fancyhdr}
+\usepackage{geometry}
+\usepackage{graphicx}
+\usepackage{lineno}
+\usepackage{mathtools}
+\usepackage{multicol}
+\usepackage{multirow}
+\usepackage{parskip}
+\usepackage{setspace}
+\usepackage{subcaption}
+\usepackage{tabularx}
+\usepackage{tabulary}
+\usepackage{titlesec}
+\usepackage[T1]{fontenc}
+\usepackage{times}
+\usepackage{url}
+\usepackage{wrapfig}
+\usepackage{xcolor}
+
+\usepackage{array}
+\newcolumntype{C}[1]{>{\centering\arraybackslash}p{#1}}
+
+% Shrink the spacing between references in the bibliography
+%\usepackage{etoolbox}
+%\patchcmd\thebibliography
+% {\labelsep}
+% {\labelsep\itemsep=-8pt\relax}
+% {}
+% {\typeout{Couldn't patch the command}}
+ %%% End of code to add %%%
+
+\bibliographystyle{h-physrev}
+
+\renewcommand{\thesection}{\Alph{section}}
+
+\newcounter{bar}
+\newcommand{\taskcounter}{%
+        \stepcounter{bar}%
+        \thebar}
+
+\setlist[itemize]{itemsep=-4pt, topsep=-2pt}
+
+\usepackage{hyperref}
+
+\hypersetup{ colorlinks=false,
+		     linkcolor=green,
+		     urlbordercolor=blue,
+		     pdfborderstyle={/S/U/W 1}}
+		     
+\renewcommand{\smallskip} {\vspace{0.1in}}
+\renewcommand{\medskip}   {\vspace{0.2in}}
+\renewcommand{\bigskip}   {\vspace{0.4in}}
+
+\geometry{tmargin=1.5cm, bmargin=1.5cm, lmargin=2cm, rmargin=2cm}
+
+\setlength{\headheight}{15pt} 
+
+\footskip=22pt
+\headsep=18pt
+
+\titlespacing*{\section}{0pt}{2pt}{2pt}
+\titlespacing*{\subsection}{0pt}{2pt}{2pt}
+\titlespacing*{\subsubsection}{0pt}{1pt}{1pt}
+
+
+\singlespacing
+%\linenumbers
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Cover Page
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+\renewcommand{\headrulewidth}{0pt}
+
+\pagestyle{fancyplain}
+
+% \lhead[\it Koskinen]{\it Koskinen}
+% \chead{B1 - Cover Page}
+% \rhead{NuUnity}
+
+\vspace{1cm}
+
+\centerline{ \large \textbf{ERC Starting Grant 2021}} \smallskip
+\centerline{ \large \textbf {Research Proposal [Part B1]}} \smallskip
+
+\vspace{1.0cm}
+
+%
+\centerline{\huge \textbf{A wrinkle in space-time}}
+\vspace{0.5cm}
+\centerline{ \huge {\bf (NuUnity)}} 
+
+
+%~\\
+
+\vspace{1.5cm}
+
+\noindent
+Cover page: \\
+- Principal Investigator: Thomas Simon Stuttard\\
+- Host Institution: Niels Bihr Institute, University of Copenhagen\\
+- Proposal Duration: ~~~~~    $60$ months\\
+
+~\vspace{0. cm}
+
+\noindent
+{\bf Proposal Summary}:
+
+Proposal summary (identical to the abstract from the online proposal submission forms, section 1). 
+
+The abstract (summary) should, at a glance, provide the reader with a clear understanding of the objectives of the research proposal and how they will be achieved. The abstract will be used as the short description of your research proposal in the evaluation process and in communications to contact in particular the potential remote referees and/or inform the Commission and/or the programme management committees and/or relevant national funding agencies (provided you give permission to do so where requested in the online proposal submission forms, section 1). It must therefore be short and precise and should not contain confidential information. 
+
+Please use plain typed text, avoiding formulae and other special characters. The abstract must be written in English. There is a limit of 2000 characters (spaces and line breaks included).
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Extended Synopsis
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage
+
+% \lhead[\it Koskinen]{\it Koskinen}
+% \chead{B1 - Extended Synopsis}
+% \rhead{NuUnity}
+
+%\begin{center}
+%  {\LARGE\bf Neutrino Oscillation and Precision Tests of}\\[1ex]
+%  {\LARGE\bf Unitarity at the South Pole}\\[1ex]	
+%  {\large David Jason Koskinen}\\[1ex]
+% \end{center}
+
+\section{Extended Synopsis}
+
+Despite the neutrino being one of the most numerous particles in the universe and having the only laboratory signal of physics beyond the Standard Model (due to the necessity of a non-zero neutrino mass), the measurements of fundamental properties related to neutrino oscillations remain an ever-present and compelling challenge. While an impressive amount of global effort \cite{Tanabashi:2018oca,
+Esteban:2018azc} has been made to measure the properties related to the $\nu_\mu\rightarrow \nu_\mu$ and $\nu_\mu \rightarrow \nu_e$ oscillation channels, the $\nu_\mu \rightarrow \nu_\tau$ channel has only been measured by 3 experiments \cite{Li:2017dbe, Agafonova:2018auq, Aartsen:2019tjl}. This is mostly due to the difficulty in experimentally identifying a charged current (CC) $\nu_\tau$ interaction from a charged current $\nu_e$ or neutral current (NC) interaction, as well as a kinematic suppression to the CC-$\nu_\tau$ cross section versus the CC-$\nu_{\mu,e}$ cross section due to large mass of the tau lepton compared to the muon or electron. The lack of measurements and relatively poor precision regarding $\nu_\mu \rightarrow \nu_\tau$ oscillations, i.e.\@ $\nu_\tau$ appearance, becomes an incredible opportunity to further probe BSM physics when considering the uncomfortable truth that the current paradigm of neutrino oscillations implicitly assumes a unitarity of the neutrino mixing matrix containing  \emph{only three} flavour states ($\nu_e$, $\nu_\mu$, and $\nu_\tau$), and subsequently three mass eigenstates ($\nu_1$, $\nu_2$, and $\nu_3$). When removing the unitarity assumptions, the precision on the true underlying neutrino oscillation parameters become impressively unconstrained, specifically for the mixing related to $\nu_\tau$\cite{Parke:2015goa}, and the existence of additional neutrino states is frequently invoked to explain the origin of neutrino mass.
+
+The focus of this proposal is to use the atmospheric $\nu_\mu \rightarrow \nu_\tau$ channel to measure the $\utau{3}$ mixing matrix element as a probe of (non)unitarity in the $\nu_3$ mass eigenstate. This is an especially timely activity due to emerging tensions of tau-lepton universality coming from individual collider experiments \cite{Abdesselam:2019dgh, Lees:2012xj, Aaij:2017deq} and combined fits to the global suite of data\cite{Amhis:2019ckw}. This timing is additionally fortuitous because a detector extension to the IceCube Neutrino Telescope at the South Pole is now funded and will be deployed in 2022/23. I wrote the first paper\cite{Koskinen:2011zz} (as a single author) about the fundamental physics opportunities of a lower-energy detector extension to IceCube, which is now becoming a reality and has the primary physics focus to make \emph{precision measurements related to $\nu_\tau$ appearance and test neutrino unitarity}. I, along with my research group, have led this topic within IceCube, resulting in the most recent publication (and current world-best result) in 2019\cite{Aartsen:2019tjl}. 
+
+\begin{wrapfigure}[21]{c}{0.55\textwidth}
+\vspace{-0.65cm}
+\centering
+\includegraphics[trim = 0.2cm 0.19cm 0cm 0cm, clip, scale=0.64, angle=0]{plots/L_E_noOsc_NC+CC.pdf}
+\caption{\label{fig:GRECO} The event rate as a function of neutrino travel baseline (L) and energy (E) for the 3-year IceCube $\nu_\tau$ appearance analysis led by research group. The black points are the data, the solid blue line is the total Monte Carlo expectation in the absence of any neutrino oscillations whereas the red and orange stacked histograms represent the contributions from appearing $\nu_\tau$ from $\nu_\mu \rightarrow \nu_\tau$.}
+\end{wrapfigure}
+
+The experimental signature of $\nu_\mu \rightarrow \nu_\tau$ in neutrino telescopes such as IceCube and the upcoming IceCube Upgrade is an excess of cascade-like events from $\nu_\tau$ interactions, on top of a considerable background of other cascade-like events (\mbox{CC-$\nu_e$}, \mbox{NC-$\nu_{(e,\mu)}$}, as well as misidentified atmospheric muons and \mbox{CC-$\nu_\mu$}), as shown in Fig.~\ref{fig:GRECO}. The experimental cascade-like excess can be converted into the parameter `$\nutau$ normalization' ($N_{\nu_\tau}$) which is a ratio of the number of observed events compared to the number expected from the {$3\times3$} Pontecorvo-Maki-Nakagawa-Sakata (PMNS)\cite{Pontecorvo:1957qd, Maki:1962mu} unitary matrix. In neutrino telescopes such as IceCube and ORCA\cite{Eberl:2017plv}, the observation and analysis of such a small $\nu_\tau$ signal is only possible due to the large amount of collected events. The IceCube Upgrade offers the incredible opportunity to collect 3-4$\times$ more $\nu_\tau$ events than the current state-of-the-art IceCube-DeepCore detector, and will do so using new optical sensors that have improved photon collection capabilities offering azimuthal and zenithal information that will be critical for novel background rejection, event selection, and reconstruction techniques. With a new detector, emerging tensions in charged tau-lepton unitarity, and weak constraints on neutrino mixing unitarity, it is an excellent time to pursue ambitious measurements of $\nu_\tau$ appearance that will serve as a direct probe of (non)unitarity in particle physics. 
+
+\subsection{Research Objectives}
+
+\textbf{Project Mission:} The goal of NuUnity is to make the first sub-10\% precision measurement of the $\nu_\tau$ normalization ($N_{\nu_\tau}$ - a parameter directly related to unitarity within the $\nu_3$ mass eigenstate) using the IceCube Upgrade. This relies on developing new reconstruction methods, creating a high-purity and high-efficiency event selection, characterizing the noise of the IceCube Upgrade sensors, and developing an analysis (and related systematic uncertainties) that uses the decade of IceCube-DeepCore data in combination with the initial 1-2 years of IceCube Upgrade data. These activities are also essential for any other low-energy analysis that will be developed for the IceCube Upgrade, e.g.\@ searches for $\mathcal{O}(1-10)$\,GeV dark matter, non-standard interactions, $\nu_\mu \rightarrow \nu_\mu$ oscillation, searches for astrophysical transient phenomena, etc.
+
+\textbf{Impact:} A sub-10\% precision result on $N_{\nu_\tau}$ will be: 1) consistent with a value of 1.0, or 2) a value inconsistent with 1.0.  A value consistent 1.0 is important as a direct measurement supporting the 3-flavour neutrino mixing paradigm, whereas a result in tension with the 3-flavour paradigm will offer a new portal and signature of BSM physics that will alter the global outlook of neutrino physics specifically, and particle physics broadly. 
+
+%##############################
+\subsection{Methodology}
+%##############################
+
+\begin{wrapfigure}[17]{c}{0.35\textwidth}
+\vspace{-0.5cm}
+\centering
+\includegraphics[trim = 0.0cm 1.0cm 1cm 0.5cm, clip, scale=0.21, angle=270]{plots/DOM_DetectionProb_3D.pdf}
+\caption{\label{fig:MDOM} A 3D modeled rendering of the IceCube Upgrade mDOM showing the segmentation related to the 24 PMTs. The color scale represents minor differences in photon detection probability for each PMT.}
+\end{wrapfigure}
+
+
+To realize my vision of making a precision test of neutrino unitarity through measurements of $\nu_\mu \rightarrow \nu_\tau$ that can offer a portal into new BSM physics, NuUnity includes the critical tasks necessary to analyze the data from the IceCube Upgrade. These include characterizing the noise in the new mDOMs, the development of novel particle identification algorithms, the creation of an event selection, and the analysis of a combined IceCube-DeepCore and IceCube Upgrade data set. But, the main element of NuUnity is the development of reconstruction methods using direct simulation and machine learning techniques that exploit the segmentation of the IceCube Upgrade multi-PMT digital optical modules (mDOMS), shown in Fig.~\ref{fig:MDOM}. 
+
+%#############################
+%#############################
+\subsubsection{Reconstructions}
+%#############################
+%#############################
+Studies by my group have shown that the improved neutrino energy and direction reconstruction afforded by the IceCube Upgrade is the single largest contribution to the increased $\nutau$ appearance sensitivity compared to IceCube-DeepCore. However, given the new geometries of the Upgrade sensors, improvements to the reconstruction \textbf{cannot be achieved simply re-using or even extending existing IceCube-DeepCore reconstruction methods}.
+
+The most advanced reconstruction techniques used for lower-energy oscillation analyses in IceCube use table-based probability look-ups to reconstruct the interaction vertex (x,y,z), direction ($\theta_{azimuth}$, $\theta_{zenith}$), time ($t$), and energy ($E$) of candidate neutrino events. For cascade-like events, e.g.\@ $\nutau$ interactions, the cascade table reflects the probability of observing a photon at a photosensor position based on a `representative' electromagnetic cascade situated at different positions and orientations in the ice. Each table takes months to produce, additional months to validate, and is based on a specific model of photon absorption and scattering in the ice, thereby requiring a different table for any relevant ice model under investigation. The reconstruction using these tables takes $10-1500$\,s per event and can only run on computers which can have enough RAM to load the tables. Given the decades of simulation livetime needed to analyze $\mathcal{O}(10)$ years of data, this step constitutes the bottleneck of the current generation of DeepCore analyses, as several CPU-years of processing time (with a factor of 2-4$\times$ expected with the IceCube Upgrade) must be run on a limited network of computing resources.
+
+Moreover, the existing algorithms assume azimuthal symmetry of the photosensor, along with a uniform downward orientation. This assumption is invalid for the mDOMs, and introduces two additional dimensions to the reconstruction landscape that causes the runtime per event to become untenable. If that weren't bad enough, the creation of the tables would take much longer because of the additional dimensions, and loading the new tables into memory would only be possible on computers with $\mathcal{O}(10-100)$\,GBytes of RAM, thus reducing further our pool of available computing power. Entirely new methods \textbf{must} there before developed, and I propose two different strategies for implementing new, non-table based reconstruction techniques: a simulation-based reconstruction and a machine learning reconstruction.
+
+Because the mDOMs are based on the KM3NeT/ORCA\cite{Adrian-Martinez:2016fdl} optical module design I will explore the option of a joint mini-collaboration for reconstruction techniques with ORCA colleagues, notably Jürgen Brunner and Paschal Coyle at CPPM-Marseille. There are existing memoranda of understanding (MoU) for data sharing and analysis techniques between IceCube and the existing ANTARES neutrino telescope (the pre-cursor to KM3NeT/ORCA), and a similar MoU for reconstructions in future telescopes is not expected to be problematic.
+
+%#############################
+\textbf{Simulation Based Reconstruction (DirectReco)}
+%#############################
+
+\begin{wrapfigure}[18]{c}{0.54\textwidth}
+\vspace{-0.5cm}
+\centering
+\includegraphics[trim = 0cm 0.5cm 0cm 0.5cm, clip, scale=0.32,  angle=270]{plots/Hallberg_12940_Energy.pdf}
+\caption{\label{fig:DirectRecoE} A simulated 36\,GeV CC-$\nu_e$ interaction in the IceCube Upgrade reconstructed using DirectReco\cite{Halberg2019}. The color scale indicates the value of the log-likelihood.}
+\end{wrapfigure} 
+
+Because neutrino events in the energy range of interest ($\mathcal{O}(1-100)$\,GeV) can be simulated by IceCube software in only a few milliseconds using graphical processing units (GPUs) for individual photon propagation, it is possible to repeatedly simulate a single neutrino interaction `on the fly' to create an expected detector response which can be compared to data, removing the need for the problematic pre-computed tables. Minimization algorithms using a likelihood-based test-statistic can then iteratively change the properties of the simulated neutrino (x,y,z,t, $\theta_{azimuth}$, $\theta_{zenith}$, E, $\nu$-flavour) to produce a single neutrino (or collection of similarly well-fitting neutrinos) that provide the best agreement with the observed data. In collaboration with colleagues in Canada and the USA focusing on IceCube-DeepCore, my group has been developing a simulation based direct reconstruction (DirectReco) specifically for the IceCube Upgrade since 2018.
+
+DirectReco offers significant advantages for use in the IceCube Upgrade. It can instantly use new ice models without the months spent producing and validating probability tables built on those new models, intrinsically accommodates photosensors with segmentation in their azimuth and zenith directions, and provides enhanced realism because the comparison to data events is based on the full simulation chain of neutrino interactions instead of a `representative/generic' electromagnetic cascade. Preliminary results using an idealized setup where simulated events are used as `fake data' have shown promises in reconstructing the energy and zenith angle. Shown in Fig.~\ref{fig:DirectRecoE} is an example of a near perfect (but unfortunately not common) reconstructed value of the energy from the NBI DirectReco.
+
+%#############################
+\textbf{Machine Learning Reconstruction (MLReco)}
+%#############################
+
+Using machine learning in modern neutrino experiments is not new\cite{Aurisano:2016jvx} even within IceCube\cite{Aartsen:2017dae}, but a complication for the IceCube Upgrade relates to geometry. While IceCube has a regular horizontal geometry, the IceCube Upgrade has an irregular geometry both horizontally and vertically. Thus, tools such as convolutional neural networks (CNN) -- which work well when using regularized planar filters on images and flat grid-like data -- require additional work as a reconstruction strategy for the IceCube Upgrade. Graph Convolution Networks (GCN \cite{Kipf:2016tc}) are a natural candidate for ML algorithm, because they do not inherently require grid-like data, but do require (and preserve) adjacency metrics which are already present in low-level data, e.g.\@ hit positions (x,y,z) and time. The benefit of any ML-based reconstruction (MLReco) is that it: 1) can handle the irregularity of IceCube Upgrade data, and 2) is fast.
+
+Along with Troels Petersen, a colleague at the NBI who specializes in machine learning techniques for electron identification in ATLAS, I co-supervise two M.Sc.\@ students who have been investigating ML reconstructions with IceCube simulation events\footnote{We use IceCube simulation because we can benchmark the MLRecos against the existing table-based reconstruction, whereas the IceCube Upgrade has no benchmark reconstruction values for comparison.}. We have tested using three different neural networks (recurrent neural networks or (RNN), an RNN coupled with long short-term memory (LSTM), and a GCN) as well as a myriad of different activation functions and loss functions. These MLRecos are trained on millions of simulated events, and show comparable resolutions for at least two of the methods (RNN and RNN+LSTM) when reconstructing the total neutrino energy and separately the time of the neutrino interaction. They also take milliseconds to execute, which is 4-6 orders of magnitude better than the best current algorithms. While these results use non-IceCube Upgrade events that have no noise and are pre-selected as already being well-reconstructable, they represent an extremely promising avenue for development by additional personnel.
+
+%#############################
+%#############################
+\textbf{Gain/Risk}: The reconstruction efforts represent the highest risk and highest gain activities within NuUnity. A working reconstruction that can handle the new azimuth and zenith information is essential to process the data and perform simulation studies. Despite preliminary results showing promise with neural networks, there is no guarantee that we will find the right combination of ML algorithm(s), activation function(s), or loss function(s) which would constitute a usable reconstruction. DirectReco may never be fast enough to use on anything other than a small sub-set of events and/or may require more resources than what is provided in this application in order to get it working as a usable reconstruction.\\
+
+%#############################
+\subsubsection{IceCube Upgrade Detector Noise}
+%#############################
+Starting as a postdoc, and continuing when I started my own research group at the NBI, I worked with a student to develop a noise model for IceCube. The Vuvuzela noise model accounts for the empirically measured time-correlated, and time uncorrelated, noise for each of the $5160$ DOMs in IceCube\cite{Aartsen:2016nxy,Larson:thesis,Larson2018}. Noise will be significantly greater challenge for the IceCube Upgrade, as the mDOM sensors have $5-10\times$ higher noise rates than IceCube DOMs, and the multi-PMT sensors will experience correlated noise between PMTs that can mimic signal events. Preliminary laboratory tests already show an extra feature of noise pulses with a time separation of $10^{-10}-10^{-9}$ seconds which is not observed in IceCube. I plan to use the invaluable experience I gained developing the IceCube noise model to develop a new extended model of noise for the IceCube Upgrade, as well develop an all new system to tag the presence of time-correlated noise `trains' that identify a noise-active photosensor.
+
+\textbf{Gain/Risk}: A detailed and fast simulation model of the noise components in the IceCube Upgrade is necessary in order to assess impacts on reconstruction resolutions, background rates of noise-only triggers, the development of an event selection that can identify and remove the noise, and degradation of particle identification techniques. Through experience gained in creating the current IceCube detector noise model as well as techniques to remove pure-noise triggers, the noise related tasks for the IceCube Upgrade come with a medium amount of risk.
+
+%#############################
+\subsubsection{Particle Identification \& Event Selection}
+%#############################
+The final level of the event selection for the $\nutau$ appearance analysis in IceCube-DeepCore\cite{Aartsen:2019tjl} has a CC-$\nutau$ signal to background ratio of $0.03$ using multiple particle identification (PID) algorithms and data mining techniques. While at the final level the dominant background is CC-$\nu_\mu$, during the earlier event selection stages the background is dominated by atmospheric muons which trigger at a rate that is nearly $10^{4}-10^{5}\times$ higher than for atmospheric neutrinos, as well as coincident noise events. Using the ratio of 0.03 as an initial target, for the IceCube Upgrade I will develop new PID techniques which leverage the use of the multi-pixel mDOMs as well as the ability to better identify down-going photons to reduce the sizable background of both atmospheric muons and noise at the early event selection stages, and CC-$\nu_\mu$ at the later stages. In tandem with the development of the PID algorithms, I propose to create an IceCube Upgrade specific event selection which is a natural task for my group, due to our development of the high-statistics 3-year IceCube-DeepCore sample, and also lead role in the development of a new event selection for the upcoming analyses of the 8-year IceCube-DeepCore sample. This task will entail creating ensembles of machine learning classifiers to remove early stage backgrounds, a new likelihood-based approach to identify events which have hits along the Cherenkov cone of a muon as tracks, as well as a non-binary PID classifier created from comparisons to direct simulation (building on the DirectReco reconstruction approach detailed previously).
+
+\textbf{Gain/Risk} The separation of early stage background is a low risk task, building upon strong existing methods and experience. The added azimuth and zenith information means that significant gains in track versus cascade separation efficiency can come from developing state-of-the-art PID algorithms. The risk is that the low photon statistics from the lowest energy events may be indistinguishable as tracks versus cascades. Any problems encountered can be mitigated by using harsh/sub-optimal cuts to sufficiently remove backgrounds at the cost of signal events, reducing the statistics for the physics measurement but allowing measurements to proceed nonetheless.
+
+
+%#############################
+\subsubsection{\texorpdfstring{$\nu_\tau$}{vt} Appearance Analysis}
+%#############################
+
+The analysis of the combined IceCube-DeepCore and IceCube Upgrade data set for $\nutau$ appearance contains perhaps the least interesting work and sub-tasks, but unequivocally provides the highest impact output of this whole proposal. It will be necessary to assess systematic uncertainties that are shared by IceCube-DeepCore as well as introduce the parameterized forms of the uncertainties that only relate to the IceCube Upgrade. The process of establishing which reconstruction routine provides the best sensitivity for the analysis, and which settings are needed for the PID and noise cleaning algorithms are time consuming and necessary steps, but do not require \textit{a priori} novel solutions as long as the reconstruction, PID, and noise removal algorithms themselves have been successfully developed.  
+
+\textbf{Gain/Risks}: While some work is clear and evident (assessing which systematic uncertainties need to be added or reparameterized for the new IceCube Upgrade sensors), other work will depend on the success (or failure) of tasks in this proposal as well as new issues which will only become apparent after the initial data is compared to Monte Carlo simulations, which has moderate associated risk given the large experience of the IceCube collaboration operating and modeling the existing detector.  
+
+\subsection{Conclusion}
+NuUnity is a ground-breaking project that will lead to the first sub-10\% measurement of a critical parameter testing neutrino unitarity and contributing significantly to our understanding of the $\nutau$ (the least well measured particle in the Standard Model), facilitated by a cutting edge new detector. The measurement will either indicate the presence of new BSM physics changing our global understanding of neutrino physics and particle physics (potentially opening a window on the origin of neutrino mass), or constitute powerful additional evidence for the validity of the 3-flavour neutrino paradigm, significantly strengthening the interpretation of results from the next generation of neutrino accelerator experiments over the next two decades. It will also innovate the tools and techniques that are necessary for a large range of other physics measurements with the IceCube Upgrade, spanning astrophysics, particle physics, $\numu$ and BSM neutrino oscillations (at energies and baselines far in excess of accelerator and reactor experiments), and other physics pursuits by both my own group and the IceCube collaboration over the coming decade. 
+
+To accomplish the ambitious scientific goals in NuUnity, I have proposed tasks which come with various levels of associated risk. Besides the brief contingencies described in this portion of my application, my experience over the past decade in taking a new detector (IceCube-DeepCore) and delivering world-leading results from small signals\cite{Aartsen:2019tjl,Aartsen:2017ulx} -- as well as the commitment of myself and my group towards realizing a new detector extension to IceCube -- offer perhaps the best evidence that I have the capability to assemble and manage an excellent research team that can overcome both the known, and unknown, challenges that will manifest over the next 5-6 years.
+
+%\begin{multicols}{2}
+\bibliography{references}
+%\end{multicols}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% CV
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage
+
+\lhead[\it Koskinen]{\it Koskinen}
+\chead{B1 - Curriculum Vitae}
+\rhead{NuUnity}
+
+\begin{wrapfigure}[0]{r}{0.28\textwidth}
+\vspace{-0.3cm}
+\raggedleft
+\includegraphics[trim=0.0cm 0.0cm 9.5cm 0.0cm, clip=true, scale=0.075, angle=0]{plots/JasonKoskinenNBIAPhoto.png}
+\end{wrapfigure}
+{\Large\textbf{David Jason Koskinen}}
+
+
+Date of Birth: August 15, 1979\\
+Nationality: United States of America\\
+Webpage:~\href{http://www.nbi.dk/~koskinen/}{\nolinkurl{nbi.dk/~koskinen}}\\
+~\\
+
+%=======================================================================
+%=======================================================================
+% Education
+%
+\textbf{EDUCATION ~~\hrulefill}\smallskip\\
+%
+\begin{tabular*}{\textwidth}%
+  {@{\extracolsep{\fill}}lcr}
+  University College London & \bf{Ph.D.}, Physics & 2010 \\
+  %\multicolumn{3}{l}{- Advisor: Prof. Jenny Thomas} \smallskip
+  \\
+  University of Minnesota-Duluth & \bf{M.S.}, Physics & 2004 \\
+  %\multicolumn{3}{l}{- Advisor: Prof. Alec Habig} \smallskip
+  \\ 
+  Rensselaer Polytechnic Institute & \bf{B.S.}, Physics & 2002 \\
+\end{tabular*}
+~\smallskip \\
+\indent
+%
+%== End Education block
+%
+%=======================================================================
+%=======================================================================
+\textbf{PROFESSIONAL APPOINTMENTS ~~\hrulefill}\smallskip\\
+\begin{tabular*}{\textwidth}%
+  {@{\extracolsep{\fill}}llr}
+  Niels Bohr Institute  &   \bf{Associate Professor} & Sept 2018 - present\\
+  - University of Copenhagen & \bf{Assistant Professor} & Sept 2013 - Sept 2018\medskip\\
+  %- University of Copenhagen & & \\
+  %& \bf{Assistant Professor} & Sept 2013 - Sept 2018\medskip \\
+  The Pennsylvania State University &  \bf{Postdoctoral Research} & Jun 2009 - Aug 2013\\
+  & \bf{Associate} & \smallskip\\
+  & \bf{Research Assistant} & Nov 2008 - May 2009\\
+%  \smallskip\\ 
+\end{tabular*}
+\\
+%
+%=======================================================================
+%=======================================================================
+%
+\textbf{ACADEMIC SUPERVISION ~~\hrulefill}\smallskip\\
+%
+%
+$\bullet$ Morten A. Medici (Ph.D. student) \hfill 2013-2017\\
+\indent - Ph.D.\@ Thesis Topic: {\it Search for Dark Matter Annihilation in the Galactic Halo using IceCube}
+\vspace{0.2cm}
+\\
+%
+$\bullet$ Michael J. Larson (Ph.D. student) \hfill 2014-2018\\
+\indent - Ph.D.\@ Thesis Topic: {\it Tau Neutrino Appearance in IceCube-DeepCore} 
+\vspace{0.2cm}
+\\
+%
+$\bullet$ Thomas S. Stuttard (Postdoc) \hfill 2016-present\\
+\indent - Current convenor of the Oscillations working group, responsible to the NSF for IceCube Upgrade offline simulation and reconstruction, and developer of a model of neutrino quantum decoherence
+\vspace{0.2cm}
+\\
+%
+$\bullet$ \'Etienne Bourbeau (Ph.D. student) \hfill 2017-present\\
+\indent - Ph.D.\@ Thesis Topic: {\it Tau Neutrino Appearance and Searches for Neutrino Multiplet Correlations with Galaxies of $Z<0.03$}\
+\vspace{0.2cm}
+\\
+%
+$\bullet$ Master Students\\
+\indent - Eva B.\@ Hansen (2016), Mikkel Jensen (2018), Mia-Louise Nielsen (2019), Thomas Halberg (2019), Ida Storehaug \footnote{Recipient of a 2019 M.Sc\@ L{\o}rup Fonden stipend}(2019), Leif Rasmussen (current), Tetiana Kozynets (current)
+\vspace{0.2cm}
+\\
+%
+$\bullet$ Bachelor Students\\
+\indent - Hans R.\@ L.\@ Larsen (2014), Itaakara Robertson (2015), Christopher Nielsen (2016), Leif Rasmussen \& Christian Skjellerup (2017), Marie Hansen (2020), Amalie Albrechtsen (current)
+\vspace{0.2cm}
+%
+~\smallskip\\
+%
+%$\bullet$ Itaakara Roberston (Bachelor student) \hfill 2015-present\\
+%\indent - Bachelor Thesis Topic: {\it Construction of a 3D IceCube Event Display} \
+%\vspace{0.2cm}
+%\smallskip\\
+%
+%=======================================================================
+%=======================================================================
+%
+\textbf{PROFESSIONAL ACTIVITIES ~~\hrulefill}\smallskip\\ 
+%
+$\bullet$ Lecturer at the 2020 \href{https://conference.ippp.dur.ac.uk/event/830/overview}{\textit{Young Experimentalists and Theorists Institute School}} (YETI 2020)\smallskip \\
+%
+$\bullet$ Organizer and host of the \href{https://indico.nbi.ku.dk/event/1101/}{\textit{IceCube-Upgrade Simulation and Reconstruction Workshop}} in 2018\smallskip \\
+%
+$\bullet$ Convenor of the `Tau Neutrino Studies' working group at the 2017 \href{https://sites.cns.utexas.edu/vietnus}{\textit{Viet Nus workshop}} focusing on neutrino challenges and limitations\smallskip \\
+%
+$\bullet$ Guest Lecturer at the 2016 Niels Bohr International Academy Ph.D. school \href{https://indico.nbi.ku.dk/conferenceDisplay.py?confId=859}{\textit{Neutrinos Underground and in the Heavens II}}\smallskip \\
+%
+$\bullet$ Hosted the Autumn 2015 IceCube collaborating meeting for $200+$ attending collaborators \smallskip \\
+%
+$\bullet$ Reviewer for French National Research Agency (ANR) in 2015\smallskip \\
+%
+$\bullet$ Lecturer at the 2015 \href{https://indico.nbi.ku.dk/conferenceDisplay.py?confId=743}{\textit{Nordic Winter School on Cosmology and Particle Physics}}\smallskip \\
+%
+$\bullet$ Lecturer at the 2014 Niels Bohr International Academy Ph.D. school \href{https://indico.nbi.ku.dk/conferenceDisplay.py?confId=690}{\textit{Neutrinos Underground and in the Heavens}}\smallskip \\
+%
+$\bullet$ Board member of the \href{http://discoverycenter.nbi.ku.dk/about_us/managing_board/}{\textit{Discovery Center for Particle Physics}} at the Niels Bohr Institute\smallskip \\
+%
+$\bullet$ Organizer of the 2014 \href{https://indico.nbi.ku.dk/conferenceDisplay.py?confId=620}{\textit{Astroparticle Neutrino Physics in Antarctica Workshop}} hosted at the Niels Bohr Institute\smallskip \\
+%
+%
+%=======================================================================
+%=======================================================================
+%
+% Research
+%
+\noindent
+\textbf{RESEARCH \& INSTITUTIONAL RESPONSIBILITIES  ~~\hrulefill}\smallskip\\
+%
+\makebox[4.5in][l]{\textbf{IceCube Experiment}}\\
+\makebox[1.0in][l]{2008 - present} \smallskip \\
+%
+$\bullet$ {\it Publication Committee} member \hfill 2017-present \vspace{0.1cm} \\
+\indent \indent Review IceCube journal articles and conference proceedings as part of a internal pre-submission process. The committee provides recommendations to the collaboration and paper authors regarding best practices.
+\smallskip \\
+%
+$\bullet$ {\it Low-energy}~\&~{\it Neutrino Oscillation working group} co-convenor \hfill 2014-2017 \vspace{0.1cm} \\
+\indent \indent In addition to the low-energy work (partially detailed below), I oversaw all physics analyses and publications related to neutrino oscillation: tau neutrino appearance, muon neutrino disappearance, sterile neutrino searches, Lorentz invariance, neutrino mass ordering, etc. This covered $\approx20$ active analyzers at 11 different international universities.
+\smallskip \\
+%
+$\bullet$ {\it Low-Energy working group} co-convenor \hfill 2012-2014 \vspace{0.1cm} \\
+\indent \indent Responsible for the data quality, Monte Carlo simulations tools, and initial background rejection and reconstruction techniques related to all physics analyses at neutrino energies $<\mathcal{O}(300)$~GeV.
+\smallskip \\
+%
+$\bullet$ {\it Simulation Coordination Committee} representative \hfill 2012-2014 \vspace{0.1cm} \\
+\indent \indent Prioritize and allocate the IceCube collaboration-wide computer resources which produce Monte Carlo simulation. \smallskip \\
+%
+$\bullet$ {\it Institution Leader} of the Niels Bohr Institute to the IceCube Collaboration Board \hfill 2013-present \vspace{0.1cm} \\
+\indent \indent Lead all IceCube-DeepCore-Upgrade research and responsibilities at NBI.
+\smallskip \\
+%
+\makebox[4.5in][l]{\textbf{IceCube Upgrade \& IceCube-Gen2}}\smallskip \\
+%
+$\bullet$ With an expected deployment in 2022/2023 the IceCube Upgrade (previously known as `PINGU') is a funded low-energy infill to the DeepCore sub-array which will lower the neutrino energy threshold to $\mathcal{O}(1)$\,GeV while maintaining a multi-megaton fiducial volume. It will dramatically improve already leading measurements of $\nu_\mu \rightarrow \nu_\tau$ oscillation and enhance all on-going neutrino analyses $<\mathcal{O}(150)$\,GeV. In addition to writing the first paper about a future low-energy detector, my group leads the simulation and analysis efforts for the IceCube Upgrade.%
+ \smallskip
+  \\
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Funding ID
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage 
+
+\lhead[\it Koskinen]{\it Koskinen}
+\chead{B1 - Funding ID}
+\rhead{NuUnity}
+
+
+%~\vspace{2cm}
+
+\centerline{ {\textit{\textbf{ Appendix: All on-going and submitted grants and funding of the PI (Funding ID)}}
+}} \smallskip
+\centerline{ \it \underline{Mandatory information} (does not count towards page limits)
+}\smallskip
+
+~\vspace{2cm}
+
+{\bf On-going Grants}
+\begin{table}[h]
+\centering
+\begin{tabularx}{1\textwidth}{|C{0.125\textwidth}|C{0.125\textwidth}|C{0.0817\textwidth}|C{0.125\textwidth}|C{0.125\textwidth}|C{0.26\textwidth}|}
+\hline
+\rowcolor[gray]{0.85} \it Project~Title & \it Funding Source & \it Amount (Euros) & \it Period & \it Role of the PI & \it Relation to current ERC Proposal\\
+\hline
+Neutrinos on Ice & Villum Foundation & 659\,134& Mar.~2016 --- Dec.~2020 & Principal Investigator & Analysis software preparation for joint DeepCore \& IceCube Upgrade data \\
+\hline
+NuFront: Neutrinos at the Physics Frontier& Carlsberg Foundation & 601\,989& Mar.~2020 --- Feb.~2023 & Principal Investigator & Focuses on $\nutau$ appearance measurement in geometry optimization for the IceCube Upgrade and bridging the gap between IceCube-DeepCore data taking and the start of the IceCube Upgrade data taking \\
+\hline
+\end{tabularx}
+\end{table}
+
+~\vspace{2cm}
+
+
+{\bf Grant Applications}
+\begin{table}[h]
+\centering
+\begin{tabularx}{1\textwidth}{|C{0.125\textwidth}|C{0.125\textwidth}|C{0.0817\textwidth}|C{0.125\textwidth}|C{0.125\textwidth}|C{0.26\textwidth}|}
+\hline
+\rowcolor[gray]{0.85} \it  Project Title & \it Funding Source & \it Amount (Euros) & \it Period & \it Role of the PI & \it Relation to current ERC Proposal\\
+\hline
+None at the time of submission & $~~~~~~~~~~~~~~~~~~~$ & & & & \\
+\hline
+\end{tabularx}
+\end{table}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Track Record
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newpage
+
+\lhead[\it Koskinen]{\it Koskinen}
+\chead{B1 - Track Record}
+\rhead{NuUnity}
+
+Through my leadership roles in the IceCube collaboration and central impact regarding $\nu_\tau$ appearance analyses, I have been grateful to be the official IceCube speaker at major conferences and workshops. Further evidence of my standing within the field are $25+$ personal invitations for seminars and colloquia at universities (Harvard, MIT, Columbia, Oxford, etc.) and National Laboratories (Fermilab, Lawrence Berkeley, and Brookhaven), as well as being an invited lecturer at $3$ weeklong Ph.D.\@ schools. I am also committed to science outreach and my group hosts events at \href{https://www.kulturnatten.dk/da/Kulturnatten}{KBH Kulturnatten}, day-long workshops for high school students at the NBI, walking tours at the 2019 BLOOM festival and interactive museum shows for \href{https://samtidskunst.dk/sites/default/files/press/pressemeddelelse_uk_weak_force.pdf}{\texttt{[WEAK] FORCE}} by Lea Porsager, evening lectures for \href{https://nbia.nbi.ku.dk/calendar/past/public/}{Folkeuniversitet i K{\o}benhavn}, and much more.
+
+\noindent
+\textbf{SELECTED PUBLICATIONS ~~\hrulefill}\\ 
+All statistics are from \texttt{inspire-hep} and include $198$ ($148$) total published (citable) papers with $19941$ ($18441$) citations, for an h-index of $73$($71$).
+%
+\noindent
+\begin{etaremune}[topsep=0pt,itemsep=1.0pt,partopsep=0pt,parsep=0pt]
+\itemsep 1pt
+%
+\item{C.\@ Pérez de los Heros (Editor), ``Probing Particle Physics With Neutrino Telescopes". Book. World Scientific (2019).}
+\begin{itemize}
+\item{I wrote the chapter on `Standard Neutrino Oscillations' for a book targeting Ph.D.\@ students in particle and astroparticle physics.\smallskip}
+\end{itemize}
+%
+\item{M.\@ G.\@ Aartsen {\it et al.\@} [IceCube Collaboration], ``Measurement of Atmospheric Tau Neutrino Appearance with IceCube DeepCore". Phys.\ Rev.\ D{\bf99} 032007 (2019). \hfill [{\tt 16~citations}]}
+\begin{itemize}
+\item{This is the world leading result on nutau appearance, and constraints on non-unitarity in neutrino oscillations. The main analysis came for my group and was led by my Ph.D.\@ student Michael Larson.\smallskip}
+\end{itemize}
+%
+\item{M.\@ G.\@ Aartsen {\it et al.\@} [IceCube Collaboration], ``Search for neutrinos from dark matter self-annihilations in the  center of the Milky Way with 3 years of IceCube/DeepCore". Eur.\ Phys.\ J.\ C{\bf77}, 627 (2017). \hfill [{\tt 67~citations}]}
+\begin{itemize}
+\item{This is the analysis and world leading results on dark matter self-annihilation to neutrinos from my Ph.D. student Morten Medici.\smallskip}
+\end{itemize}
+%
+\item{R.~Abbasi {\it et al.}~~[IceCube Collaboration], ``The Design and Performance of IceCube DeepCore,''  Astropart.\ Phys.\  {\bf 35}, 615 (2012).\hfill[{\tt 279~citations}]}
+\begin{itemize}
+\item{I was one of the writers and editors, generated the simulation data sets, produced the trigger and effective volume/area performance plots, and prepared all plots and figures.\smallskip}
+\end{itemize}
+%
+\item{ D.~J.~Koskinen, ``IceCube-DeepCore-PINGU: Fundamental neutrino and dark matter physics at the South Pole," Mod.\ Phys.\ Lett.\ A{\bf 26}, 2899 (2011). \hfill[{\tt 61 citations}]}
+\begin{itemize}
+\item{\textbf{Single author paper which is the first published account of PINGU, and is the precursor to the `IceCube Upgrade'.}\smallskip}
+\end{itemize}
+
+%\item{$^*$D.~G.~Michael {\it et al.}~~[MINOS Collaboration], ``Observation of muon neutrino disappearance with the MINOS detectors and the NuMI neutrino beam,'' Phys.\ Rev.\ Lett.\  {\bf 97}, 191801 (2006).~~~~~~~~~~~~~  \hfill [{\tt 596 citations}]}
+%\begin{itemize}
+%\item{I contributed to the treatment of systematic uncertainties.\\}
+%\end{itemize}
+\end{etaremune}
+
+%
+% Name and address
+%
+%~\medskip
+%~
+%\centerline{ \large \textbf{Track Record - David Jason Koskinen}} \smallskip \\
+%
+%
+%=======================================================================
+%=======================================================================
+%
+%
+%\textbf{PROFESSIONAL ACTIVITIES ~~\hrulefill} \smallskip \\ 
+%
+%$\bullet$ Lecturer at the 2015 \textit{Nordic Winter School on Cosmology and Particle Physics}\smallskip \\
+%
+%$\bullet$ Board member of the \textit{Discovery Centre for Particle Physics} at the Niels Bohr Institute\smallskip \\
+%
+%$\bullet$ Lecturer at the 2014 Niels Bohr International Academy Ph.D. school \textit{Neutrinos Underground and in the Heavens}\smallskip \\
+%
+%$\bullet$ Creator and organizer of the 2014 \textit{Astroparticle Neutrino Physics in Antarctica Workshop} hosted at the Niels Bohr Institute\smallskip \\
+%
+%== End Committee block
+%
+%=======================================================================
+%=======================================================================
+%
+% Presentations
+%
+%\newpage
+%
+\noindent
+\textbf{INVITED CONFERENCES \& WORKSHOPS ~~\hrulefill}
+%
+\begin{multicols}{2}
+\begin{etaremune}[topsep=0pt,itemsep=4pt,partopsep=0pt,parsep=0pt]
+\itemsep 3.5pt
+%\setlength{\itemindent}{0em}
+%
+\item{\textit{IceCube - Particle Physics and Astrophysics on Ice} - 
+\href{https://indico.nbi.ku.dk/event/1259/}{Nordic Conference on Particle Physics}~~-~~Skeikampen, Norway~~-~~January 3, 2020.}
+%
+%
+\item{\textit{IceCube and Gen2: Atmospheric and Oscillation Results and Status} \\ 
+\href{https://www.iopconferences.org/iop/frontend/reg/thome.csp?pageID=583922&eventID=1058&traceRedir=2&eventID=1058}{Next Generation Nucleon Decay and Neutrino Detectors (NNN17)} - University of Warwick - October 27, 2017.}
+%
+\item{\textit{Neutrino Physics with the PINGU Extension to IceCube}  - 
+ \href{https://indico.cern.ch/event/469963/}{TeV Particle Astrophysics 2016 (TeVPA)} - CERN - September 12, 2016.}
+%
+%
+ \item{\textit{Atmospheric neutrino results from IceCube/DeepCore and plans for PINGU} \\
+ \href{http://neutrino2016.iopconfs.org/home}{The XXVII International Conference on Neutrino Physics and Astrophysics (Neutrino 2016)}~~-~~Imperial College London~~-~~July 6, 2016.}
+%
+\item{\textit{Neutrino Oscillation and Resolving the Neutrino Mass Ordering} \\
+\href{http://indico.cern.ch/event/344173/overview}{ICNFP2015: International Conference on New Frontiers in Physics}~~-~~Kolymbari, Greece~~-~~August 29, 2015.}
+ %
+\item{\textit{Future Atmospheric Neutrino Experiments} -
+\href{https://indico.ph.qmul.ac.uk/indico/conferenceDisplay.py?confId=22}{NuPhys2014: Prospects in Neutrino Physics} - Queen Mary University of London - December 16, 2014.}
+%
+\item{\textit{IceCube Results and PINGU Perspectives} - 
+\href{http://www.ba.infn.it/~now/now2014/web-content/index.html}{Neutrino Oscillation Workshop} - Conca Specchiulla, Italy - September 12, 2014.}
+%
+\item{\textit{Results from IceCube and Prospects for PINGU} - 
+\href{http://pprc.qmul.ac.uk/research/ipa2014}{Interplay of Particle and Astroparticle Physics} - Queen Mary University of London - August 19, 2014.}
+%
+\item{\textit{Dark Matter Searches and Astrophysical Neutrinos in IceCube} - 
+\href{http://cp3-origins.dk/events/meetings/mass2014}{Origin of Mass 2014} - CP$^3$ Origins - May 22, 2014.}
+%
+\item{\textit{PINGU: Resolving the Neutrino Mass Hierarchy at the South Pole} - 
+\href{https://indico.cern.ch/event/224351/}{New Directions in Neutrino Physics} - Aspen Center for Physics  - February 7, 2013.}
+%
+\item{ \textit{PINGU and O(1) GeV cross-sections} - 
+\href{http://www.pitt.edu/~vipres/program_nu_flux.html}{Flux Measurement and Determination in the Intensity Frontier Era Neutrino Beams} - University of Pittsburgh - December 7, 2012.}
+%
+\item{\textit{IceCube, DeepCore and PINGU} - 
+\href{http://conferences.fnal.gov/nnn12/}{Next Generation Nucleon Decay and Neutrino Detectors (NNN12)} - Fermilab - October 5, 2012.}
+%
+\item{ \textit{IceCube-DeepCore} - 
+\href{http://alexfriedland.com/info11/}{Implications of Neutrino flavour Oscillations (INFO11)} - Santa Fe, New Mexico - June 7, 2011.}
+%
+\item{\textit{IceCube Neutrino Telescope} - 
+\href{http://www.phy.uct.ac.za/conf/Win11/}{23$^{rd}$ International Workshop on Weak Interactions and Neutrinos (WIN'11)} - Cape Town, South Africa - January 31, 2011.}
+%
+\end{etaremune}
+\end{multicols}
+
+\textbf{INVITED COLLOQUIA \& SEMINARS (Selected)~~\hrulefill}
+%
+\begin{multicols}{2}
+%\begin{etaremune}[topsep=0pt,itemsep=1.5pt,partopsep=0pt,parsep=0pt]
+\begin{itemize}[topsep=0pt,itemsep=4.5pt,partopsep=0pt,parsep=0pt]
+%
+\item{\textit{Fundamental Neutrino Physics with a Gigaton of Ice} - University of Zurich - May 28, 2018.}
+%
+\item{\textit{Fundamental Neutrino Physics with a Gigaton of Ice}  - University of Oxford - May 1, 2018.}
+%
+\item{\textit{Neutrinos on Ice: Using IceCube to Chase a Ghost Particle} - 
+Physics and Astronomy Colloquium - University of Southampton - October 10, 2014.}
+%
+\item{\textit{Using the IceCube Neutrino Observatory to Study Inner and Outer Space} - 
+DTU Space Seminar - Technical University of Denmark - December 5, 2013.}
+%
+%\item{\textit{Connecting Inner and Outer Space: Astroparticle Physics Big and Small} - 
+%Annual Meeting of the Danish Physical Society - University of Copenhagen - November 14, 2013.}
+%
+\item{ \textit{PINGU: Neutrino Hierarchy Determination at the South Pole} - 
+Intensity Frontier Department Physics Discussions - Fermilab - April 11, 2013.}
+%
+\item{ \textit{IceCube-DeepCore-PINGU: Neutrino Physics at the South Pole} - 
+Astro/Particle Seminar - University of Cincinnati - February 26, 2013.}
+%
+\item{ \textit{IceCube-DeepCore-PINGU: Neutrino Physics at the South Pole} - 
+Institute for Nuclear and Particle Astrophysics Seminar - Lawrence Berkeley National Laboratory  - February 22, 2013.}
+%
+%\item{ \textit{IceCube-DeepCore-PINGU: Neutrino Physics at the South Pole} - 
+%Discovery Center Seminar - Niels Bohr Institute  - February 20, 2013.}
+%
+%\item{ \textit{IceCube-DeepCore-PINGU: Neutrino Physics at the South Pole} - 
+%Nuclear/Particle Physics Seminar - University of Colorado at Boulder - February 11, 2013.}
+%
+\item{\textit{IceCube-DeepCore-PINGU: Neutrino Physics at the South Pole} - 
+Laboratory for Particle Physics and Cosmology Seminar - Harvard University - December 12, 2012.}
+%
+\item{ \textit{IceCube-DeepCore-PINGU: Neutrino Physics at the South Pole} - 
+Lunchtime Seminar - Massachusetts Institute of Technology - December 11, 2012.}
+%
+\item{ \textit{Neutrinos at the South Pole} - 
+Particle Physics Seminar - Universit\"{a}t W\"{u}rzburg - September 27, 2012.}
+%
+\item{ \textit{IceCube-DeepCore-PINGU: Atmospheric Neutrino Physics at the South Pole} - 
+Particle Physics Seminar - Brookhaven National Laboratory - September 6, 2012.}
+%
+%\item{ \textit{Neutrino Oscillations at the South Pole} - 
+%Nuclear/Particle/Astro/Cosmo Forum - University of Wisconsin-Madison - February 27, 2012.}
+%
+\item{ \textit{IceCube-DeepCore-PINGU: Fundamental Neutrino Physics at the South Pole} - 
+Nuclear Physics, Astronomy, and Astrophysics Joint Seminar - Stony Brook University - December 8, 2011.}
+%
+%\item{ \textit{IceCube-DeepCore-PINGU: Neutrino Physics at the South Pole} - 
+%Physics Seminar - University of Minnesota-Duluth - November 15, 2011.}
+%
+\item{ \textit{IceCube-DeepCore: The biggest little neutrino detector at the South Pole} - 
+Particle Seminar - Columbia University - March 9, 2011.}
+%
+%\item{ \textit{DeepCore - Extending the energy reach of neutrinos in IceCube} - 
+%Physics and Astronomy Colloquium - University of Alabama - December 1, 2010.}
+%%
+\item{ \textit{Neutrino Oscillations and (dis)appearance prospects for IceCube-DeepCore} - 
+CCAPP Seminar - The Ohio State University's Center for Cosmology and AstroParticle Physics - October 19, 2010.}
+%
+%\item{ \textit{Initial Sterile Neutrino results from MINOS} - 
+%New Perspectives - Fermilab - June 3, 2008.}
+%%
+%\item{ \textit{NuMI Muon Monitor Studies and First Results from the MINOS Sterile Neutrino Search} - 
+%HEP Astrophysics Seminar - Pennsylvania State University - May 15, 2008.}
+%%
+\item{ \textit{NuMI Muon Monitor Studies and First Results from the MINOS Sterile Neutrino Search} - 
+Neutrino Physics Seminar - Lawrence Berkeley National Laboratory - May 13,  2008.}
+%%
+%\item{ \textit{NuMI Muon Monitor Studies and First Results from the MINOS Sterile Neutrino Search} - 
+%Joint HEP Neutrino Physics Seminar - University of Wisconsin-Madison - April 25, 2008.}
+%%
+%\end{etaremune}
+\end{itemize}
+\end{multicols}
+
+
+
+
+\end{document}
