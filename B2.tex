@@ -150,8 +150,8 @@
 
 Despite every other force in Nature being successfully described by quantum mechanics and decades of theoretical efforts there is currently no quantum theory of gravity. A major contributing factor to this impasse is the paucity of meaningful experimental constraints to guide theory, a consequence of the astounding weakness of gravity compared to the other forces. In fact, gravity is only expected to become strong in particle interactions at energies 15 orders of magnitude higher than can be achieved in the most powerful particle colliders.
 
-Even considering gravity's weakness as a fundamental force, there is hope to confront this glaring theoretical void in our understanding of the Universe. Neutrinos, ghost-like particles that are barely affected by the other forces of Nature, can travel vast distances, allowing even the very weak gravitational effects expected in a quantum theory of gravity to accumulate into potentially measurable signals. Furthermore, the bombardment of the Earth by cosmic rays from violent astrophysical sources produces an atmospheric neutrino flux with energies far exceeding those from man-made accelerators, allowing the suppression of the effects of quantum gravity to be at least partially overcome.
-o
+Even considering gravity's weakness as a fundamental force, there is hope to confront this glaring theoretical void in our understanding of the Universe. Neutrinos are barely affected by the other forces of Nature and thus can travel vast distances, allowing even the very weak gravitational effects expected in a quantum theory of gravity to accumulate into potentially measurable signals. Furthermore, the bombardment of the Earth by cosmic rays from violent astrophysical sources produces an atmospheric neutrino flux with energies far exceeding those from man-made accelerators, allowing the suppression of the effects of quantum gravity to be at least partially overcome.
+
 \begin{wrapfigure}{R}{0.45\textwidth} %this figure will be at the right
     \centering
 		\vspace{-7pt}
@@ -163,15 +163,7 @@ o
 
 A quantum theory of gravity is expected to fundamentally alter the structure of space-time at microscopic scales, resulting in an uncertain/fluctuating space-time geometry that would degrade the quantum superposition phenomenon of neutrino oscillations in a process known as neutrino decoherence. Additionally, symmetries fundamental to our current understanding of of particle physics such as $CPT$ (Charge-Parity-Time) symmetry may be violated if gravity is a quantum force, producing differences in neutrino oscillation effects between neutrinos and their antimatter counterparts. 
 
-\begin{wrapfigure}{R}{0.45\textwidth} %this figure will be at the right
-    \centering
-		\includegraphics[width=1.\linewidth]{images/atmo_osc.png}
-		\caption{Neutrinos produced in the atmosphere cross the Earth before detection in IceCube, oscillating and potentially experiencing the influence of quantum gravity as they propagate.}
-		\vspace{-7pt}
-		\label{fig:atmo_osc}
-\end{wrapfigure}
-
-My scientific vision is to perform the world's most sensitive searches for these signatures of quantum gravity with neutrinos, some of which will be world-firsts based on theoretical models I have developed. To do so I will exploit the vast flux of high energy neutrinos produced in the Earth's atmosphere, observed using the world's largest and most sensitive neutrino telescope, the IceCube neutrino observatory at the South Pole, creating a state-of-the-art new data sample with unprecedented statistics and range of neutrino energies, and pioneer the first use of (anti)neutrino discrimination methods in neutrino telescope oscillation measurements. Crucially, I have demonstrated that these searches are capable of detecting the predicted size of these quantum gravity effects in a number of scenarios, giving the realistic possibility of the first experimental detection of the signs of quantum gravity, which would be a truly revolutionary result. These results will also directly confront the question of why the Universe is dominated by matter rather than antimatter, one of the greatest open questions in physics.
+My scientific vision is to perform the world's most sensitive searches for these signatures of quantum gravity with neutrinos, some of which will be world-firsts based on theoretical models I have developed. To do so I will exploit the vast flux of high energy neutrinos produced in the Earth's atmosphere, observed using the world's largest and most sensitive neutrino telescope the IceCube neutrino observatory at the South Pole, creating a state-of-the-art new data sample with unprecedented statistics and range of neutrino energies, and pioneering the first use of (anti)neutrino discrimination methods in neutrino telescope oscillation measurements. Crucially, I have demonstrated that these searches are capable of detecting the predicted size of these quantum gravity effects in a number of scenarios, giving the realistic possibility of the first experimental detection of the signs of quantum gravity, which would be a truly revolutionary result. These results will also directly confront the question of why the Universe is dominated by matter rather than antimatter, one of the greatest open questions in physics.
 
 I have developed a number models of neutrino decoherence resulting from quantum gravity that I will test in this project, enabling the inference of the underlying space-time properties from experimental neutrino observations for the first time, and have a growing reputation in the theoretical community (recently being invited to co-author an international review of the field). As the leader of the recent generation of world-class IceCube neutrino oscillation measurements (with a team of 13 physicists from 7 institutes in Europe and the US) I have experience leading a major international research project and unparalleled expertise in measuring neutrino oscillations with IceCube, and play a prominent role in the IceCube detector upgrade that this project will exploit. My scientific leadership skills have been recognised by the IceCube collaboration, where I hold the roles of \textit{IceCube Upgrade simulation manager} (I am the named responsible person to the US National Science Foundation for delivering all simulations for this \$37 million project) and \textit{IceCube oscillation physics co-convener}. My combination of experimental, phenomenological and leadership expertise make me uniquely capable to tackle these ambitious measurements. \\
 
@@ -233,13 +225,29 @@ It is also predicted that these space-time fluctuations manifest as so-called \t
 
 \subsection{Neutrino oscillations and decoherence}
 
+\begin{figure}
+%\begin{subfigure}[t]{0.5\textwidth}
+    \begin{subfigure}[b]{0.5\textwidth}
+    \centering
+    \includegraphics[trim=0.0cm 12.7cm 0.cm 0.2cm, clip=true, width=1.\linewidth]{images/atmo_oscillogram_randomize_flavor_n0_matter.png}
+    \caption{}
+    \end{subfigure}
+    \begin{subfigure}[b]{0.5\textwidth}
+    \centering
+    \includegraphics[trim=0.0cm 12.7cm 0.cm 0.2cm, clip=true, width=1.\linewidth]{images/atmo_oscillogram_randomize_flavor_n2_matter.png}
+    \caption{}
+    \end{subfigure}
+    \caption{Modified atmospheric neutrino oscillations vs. neutrino energy (x axis) and arrival direction (y axis) in my $\nu$-VBH interaction decoherence models, showing (a) energy-independent and (b) $E^2$ suppressed scenarios (to which accelerator experiments are blind)~\cite{PhysRevD.102.115003}. Detectable features are present across a broad range of energies.}
+    \label{fig:decoh_oscillograms}
+\end{figure}
+
 Neutrinos exhibit the peculiar phenomenon of \textit{neutrino oscillations} where a neutrino produced as one type (\textit{flavour}) may be detected later as another~\cite{Fukuda:1998mi, Ahmad:2001an,Ahmad:2002jz}. This is a consequence of mixing between neutrino mass and flavour states, and the detection of these oscillations implies that neutrinos have non-zero (albeit tiny) masses, contrary to the Standard Model (SM) of particle physics, providing one of the only confirmed experimental signs of Beyond Standard Model (BSM) physics today. These oscillations are characterised by \textit{mixing angles}, describing the mixing between mass/flavour states (controlling the oscillation amplitudes) and \textit{mass splittings}, which are the difference between the (squared) neutrino masses (controlling the oscillation frequencies), and the measurement of these oscillations is a major field of active research today.
 
 However, the quantum superposition effect producing these oscillations would be disrupted for neutrinos propagating in fluctuating space-time, resulting in the damping of neutrino oscillations and averaging of neutrino flavours in a process known as neutrino decoherence~\cite{Benatti_2000, PhysRevLett.85.1166}. The oscillating nature of neutrinos and their ability to travel vast distances unperturbed by the other forces of nature makes them uniquely sensitive to decoherence effects from quantum gravity, with the neutrinos acting as tiny quantum interferometers. Decoherence measurements are potentially sensitive to a range of new physics scenarios~\cite{Mavromatos2010, AmelinoCamelia:2008qg, Perlman_2015, Harlow:2018jwu, Hellmann:2021jyz, 1909.11271, EPJC802020, Capozzi:2018bps, 1904.02518}, including those only accessible via the gravitational force (to which nearly all other particle physics measurements are essentially blind)~\cite{Hellmann:2021jyz}.
 
-I have developed phenomenological models of the influence of neutrino-VBH ($\nu$-VBH) interactions on neutrino propagation in a range of scenarios (including flavour violations, democratic population of particle states, severe phase perturbations and total loss of the neutrino)~\cite{PhysRevD.102.115003}, and remarkably have demonstrated that the resulting damping effect from \textit{natural} Planck scale physics can be resolved using neutrino oscillation measurements by the IceCube neutrino observatory, even if only a small fraction of neutrinos undergo these encounters. I have also very recently developed a model of neutrino decoherence resulting from lightcone fluctuations~\cite{2103.15313} (submitted to the journal \textit{Phys. Rev. D}), accounting for both fluctuating space-time curvature and also scenarios where the speed of light is uncertain/variable for high energy particles (so-called \textit{stochastic Lorentz invariance violation}~\cite{Vasileiou2015, Amelino-Camelia:2016fuh}), yielding further potential signals in IceCube data. These models are the first to directly connect the potentially observable phenomenology of neutrino decoherence to the underlying microphysics of a quantum theory of gravity, allowing experimental constraints on the fundamental nature of space-time to be made using decoherence measurements for the first time in this project.
+I have developed phenomenological models of the influence of neutrino-VBH ($\nu$-VBH) interactions on neutrino propagation in a range of scenarios (including flavour violations, democratic population of particle states, severe phase perturbations and total loss of the neutrino)~\cite{PhysRevD.102.115003} (see Fig. \ref{fig:decoh_oscillograms}), and remarkably have demonstrated that the resulting damping effect from \textit{natural} Planck scale physics can be resolved using neutrino oscillation measurements by the IceCube neutrino observatory, even if only a small fraction of neutrinos undergo these encounters. I have also very recently developed a model of neutrino decoherence resulting from lightcone fluctuations~\cite{2103.15313} (submitted to the journal \textit{Phys. Rev. D}), accounting for both fluctuating space-time curvature and also scenarios where the speed of light is uncertain/variable for high energy particles (so-called \textit{stochastic Lorentz invariance violation}~\cite{Vasileiou2015, Amelino-Camelia:2016fuh}), yielding further potential signals in IceCube data. These models are the first to directly connect the potentially observable phenomenology of neutrino decoherence to the underlying microphysics of a quantum theory of gravity, allowing experimental constraints on the fundamental nature of space-time to be made using decoherence measurements for the first time in this project.
 
-\textbf{State-of-the-art:} Decoherence searches have been performed using neutrinos from nuclear reactors, the Sun, the Earth's atmosphere and particle accelerators~\cite{PhysRevLett.85.1166, Abbasi:2009nfa, PhysRevD.89.053002, Bakhti:2015dca, Coelho:2017zes, PhysRevD.95.113005, Coloma:2018idr, de_Holanda_2020}, generally using simplified mathematical expressions rather than specific models, with no signal observed thus far. Despite the large distances travelled, neutrinos of extragalactic origin are not in general well suited to decoherence searches due to the incoherent nature of the sources of these neutrinos and degeneracies between the expected flavour composition in conventional vs. decoherence scenarios~\cite{PhysRevD.102.115003}. Planck scale constraints on lightcone fluctuations exist for high energy $\gamma$-rays via test of arrival time spread in $\gamma$-ray bursts (GRB) and quasar image degradation~\cite{Vasileiou2015, Perlman_2015} but only under highly optimistic assumptions such as no energy suppression of Planck scale effects or the maximal possible accumulation of uncertainty over distance (and even then only with mild energy suppression)~\cite{2103.15313}, and in the absence of an underlying model no correspondence between the effects of fluctuating space-time on photons and neutrinos can be assumed. Decoherence effects resulting from quantum gravity are expected to be energy-suppressed, and the strongest constraints to these signals to date were set using low statistics publicly released IceCube data (by non-collaboration authors)~\cite{Coloma:2018idr}. The measurements I will perform will exceed the sensitivity of these results by orders of magnitude, measure new strongly energy-suppressed (cubic and quartic) scenarios that have not previously been experimentally tested, test an unprecedented range of specific models, and include a robust treatment of systematic uncertainties not present in previous works, representing a major leap forward in this exciting field. \\
+\textbf{State-of-the-art:} Decoherence searches have been performed using neutrinos from nuclear reactors, the Sun, the Earth's atmosphere and particle accelerators~\cite{PhysRevLett.85.1166, Abbasi:2009nfa, PhysRevD.89.053002, Bakhti:2015dca, Coelho:2017zes, PhysRevD.95.113005, Coloma:2018idr, de_Holanda_2020}, generally using simplified mathematical expressions rather than specific models, with no signal observed thus far. Despite the large distances travelled, neutrinos of extragalactic origin are not in general well suited to decoherence searches due to the incoherent nature of the sources of these neutrinos and degeneracies between the expected flavour composition in conventional vs. decoherence scenarios~\cite{PhysRevD.102.115003}. Planck scale constraints on lightcone fluctuations exist for high energy $\gamma$-rays via tests of arrival time spread in $\gamma$-ray bursts (GRB) and quasar image degradation~\cite{Perlman_2015} but only under highly optimistic assumptions such as no energy suppression of Planck scale effects or the highly correlated fluctuations between different space-time regions (and even then only with mild energy suppression)~\cite{2103.15313}, and in the absence of an underlying model no correspondence between the effects of fluctuating space-time on photons and neutrinos can be assumed. Decoherence effects resulting from quantum gravity are expected to be energy-suppressed, and the strongest constraints to these signals to date were set using low statistics publicly released IceCube data (by non-collaboration authors)~\cite{Coloma:2018idr}. The measurements I will perform will exceed the sensitivity of these results by orders of magnitude, measure new strongly energy-suppressed (cubic and quartic) scenarios that have not previously been experimentally tested, test an unprecedented range of specific models, and include a robust treatment of systematic uncertainties not present in previous works, representing a major leap forward in this field. \\
 
 % TODO ref subir paper about why photns and neutrinos may experience different fluctuations
 % \todo{Proton decay}
@@ -270,7 +278,7 @@ I have developed phenomenological models of the influence of neutrino-VBH ($\nu$
     \centering
     % \vspace{-9pt}
     \includegraphics[trim=0.0cm 0.0cm 0.cm 0.0cm, clip=true, width=1.\linewidth]{images/CPTv_IceCube.pdf}
-	\caption{Difference between neutrino and antineutrino oscillation probability in the presence of $CPT$-V, showing potential signals that no experiment other than IceCube could detect. No difference is expected if $CPT$ is not violated, meaning any observed difference must result from new physics. }
+	\caption{Asymmetry between neutrino and antineutrino oscillation probability in the presence of $CPT$-V, showing potential energy-suppressed signals not excluded by any previous $CPT$-V oscillation searches. No asymmetry is expected if $CPT$ is not violated, meaning any observed difference must result from new physics. Differences in (anti)neutrino masses can produce anomalous oscillation signals across a broad range of energies, whereas signals of (anti)neutrino mixing angle deviations are confined to the GeV region.}
 % 	\vspace{-7pt}
 	\label{fig:$CPT$v}
 \end{wrapfigure}
@@ -285,6 +293,15 @@ Detecting $CPT$-V would have profound consequences even beyond the search for qu
 
 \noindent \textbf{State-of-the-art:} In the absence of a concrete model of quantum gravity (or other $CPT$-V theory) it is essential to probe the broadest possible range signals~\cite{hep-ph/9809542} for signs of $CPT$-V. Experimental constraints exist for neutral kaons~\cite{Ellis:1999xh, Ambrosino:2006ek, Abouzaid:2010ny, Babusci:2013gda, Schubert:2014ska}, neutrinos~\cite{Adamson:2013whj, Ohlsson:2014cha}, hadron colliders~\cite{Aad:2013eva, vanTilburg:2016awx} and in precision tests of low energy systems such as particle magnetic moment measurements~\cite{Bluhm:1997ci, Bennett:2007aa} and (anti)hydrogen spectroscopy~\cite{Kostelecky:2015nma}, with no observed signal to date. This indicates that such effects must be highly suppressed, as expected in a quantum theory of gravity. The sensitivity of neutrino oscillations to very small (sub-eV) mass differences makes them one of the best motivated search channels~\cite{PhysRevD.99.075022}, and the measurements in this work will test $CPT$-V at orders of magnitude higher energies that existing limits with accelerator neutrinos. Additionally, under my leadership the precision of IceCube's neutrino oscillation measurements has reached parity with accelerator experiments for the first time, and will surpass this during this project with the data from the next-generation IceCube Upgrade. Coupled with pioneering (anti)neutrino separation methods I will develop, this project will afford unparalleled sensitivity to energy-suppressed $CPT$-V in neutrino oscillations. \\
 
+\todo{ALPHA experiment}
+
+% \begin{wrapfigure}{R}{0.45\textwidth} %this figure will be at the right
+%     \centering
+% 		\includegraphics[width=1.\linewidth]{images/atmo_osc.png}
+% 		\caption{Neutrinos produced in the atmosphere cross the Earth before detection in IceCube, oscillating and potentially experiencing the influence of quantum gravity as they propagate.}
+% 		\vspace{-7pt}
+% 		\label{fig:atmo_osc}
+% \end{wrapfigure}
 
 % The concept of \textit{symmetries} in physics are fundamental to understanding of the microscopic world. 
 % Charge-Parity-Time ($CPT$) symmetry - meaning that the physics of a system remains unchanged when simultaneously the charge flips, directions are mirrored and the direction of time reverses - is a cornerstone of the quantum field theories that have described our Universe at microscopic scales with unprecedented success. However, the fundamental conditions required for $CPT$ symmetry are not expected to hold in a quantum theory of gravity (for example due to the fluctuating nature of space-time), leading to the prediction that $CPT$ symmetry may be violated at some energy scale~\cite{Mavromatos:2005mi, RalfLehnert:2016grl}. An experimental signature of $CPT$ violation ($CPT$-V) would be a game changing result in the search for quantum gravity and more generally would shake the foundations of quantum field theories.
@@ -320,7 +337,7 @@ Detecting $CPT$-V would have profound consequences even beyond the search for qu
     \caption{(a) The IceCube neutrino observatory at the South Pole. Cherekov light from neutrino interactions in the glacial ice deep below the surface is detected by PMTs. (b) One of the new multi-PMT optical modules to be installed in the IceCube Upgrade.}
 \end{figure}
 
-The IceCube neutrino observatory~\cite{Aartsen_2017}, located at the geographic South Pole, instruments a vast 1 billion tons of glacial ice deep below the surface with 5160 optical sensors, each containing a single photo-multipier tube (PMT), to detect Cherenkov light produced by the interactions of neutrinos in the ice. This truly colossal 1 Gton detector detects huge numbers of neutrinos produced in air showers when cosmic rays slam into the Earth's atmosphere, many of which oscillate from muon to tau flavoured as they cross the Earth (Fig. \ref{fig:atmo_osc}), as well as neutrinos of extra-galactic origin. These neutrinos are detected across a staggering six orders of magnitude in energy (GeV to PeV), dwarfing the energy reach of even particle colliders. 
+The IceCube neutrino observatory~\cite{Aartsen_2017}, located at the geographic South Pole, instruments a vast 1 billion tons of glacial ice deep below the surface with 5160 optical sensors, each containing a single photo-multipier tube (PMT), to detect Cherenkov light produced by the interactions of neutrinos in the ice. This truly colossal 1 Gton detector detects huge numbers of neutrinos produced in air showers when cosmic rays slam into the Earth's atmosphere, many of which oscillate from muon to tau flavoured as they cross the Earth, as well as neutrinos of extra-galactic origin. These neutrinos are detected across a staggering six orders of magnitude in energy (GeV to PeV), dwarfing the energy reach of even particle colliders. 
 
 %These high-energy neutrinos with long travel distances are perfect to search for decoherence from Planck-scale physics, and the huge statistics allows even very weak effects to be probed (crucial for quantum gravity). 
 
@@ -333,7 +350,7 @@ The IceCube neutrino observatory~\cite{Aartsen_2017}, located at the geographic 
 % \end{wrapfigure}
 
 
-Furthermore, in 2023-24 IceCube will be substantially upgraded~\cite{IceCubeUpgrade_ICRC2019} with sensitive new multi-PMT optical modules, dramatically increasing the instrumentation density in a 2 Mton core. I lead the international group conducting the simulation studies of the goals and performance of the IceCube Upgrade experiment~\cite{IceCubeUpgrade_ICRC2019, NuFactProceedings}, which show factor 2-4 improvements in detector efficiency and resolution, providing a truly next-generation precision neutrino physics facility. Additionally, a host of new calibration devices will be deployed to allow precise characterisation of the natural detection medium and significantly reduce systematic uncertainties.\\
+Furthermore, in 2023-24 IceCube will be substantially upgraded~\cite{IceCubeUpgrade_ICRC2019} with sensitive new multi-PMT optical modules, dramatically increasing the instrumentation density in a 2 Mton core. I lead the international group conducting the simulation studies of the goals and performance of the IceCube Upgrade experiment~\cite{IceCubeUpgrade_ICRC2019, NuFactProceedings}, which show factor 2-4 improvements in detector efficiency and resolution, providing a truly next-generation precision neutrino physics facility \todo{Good fro high stats (small signals) and separating small nu/nubar effects}. Additionally, a host of new calibration devices will be deployed to allow precise characterisation of the natural detection medium and significantly reduce systematic uncertainties.\\
 
 
 
@@ -416,7 +433,7 @@ I will build on these initial studies to pioneer the first use (anti)neutrino se
     \label{fig:michel_electron}
 \end{wrapfigure}
 
-I will combine these various methods with correlating data features (such as the reconstructed neutrino energy and direction, and associated uncertainties) to produce a machine learning based (anti)neutrino classifier (for example based on \textit{extreme gradient boosted decision tree ensembles}~\cite{Chen:2016btl} which I have previously used successfully for neutrino flavour classification), assigning each event a probability of being a (anti)neutrino to enable statistical separation of the two cases. Here I will collaborate with my CERN Large Hadron Collider (LHC) colleagues at NBI (Associate Professor Troels Petersen's group) with whom I am currently undertaking a number of promising machine learning developments in IceCube.
+I will combine these various methods with correlating data features (such as the reconstructed neutrino energy and direction, and associated uncertainties) to produce a machine learning based (anti)neutrino classifier (for example based on \textit{extreme gradient boosted decision tree ensembles}~\cite{Chen:2016btl} which I have previously used successfully for neutrino flavour classification), assigning each event a probability of being a (anti)neutrino to enable statistical separation of the two cases. Here I will collaborate with my CERN Large Hadron Collider (LHC) colleagues at NBI (Associate Professor Troels Petersen's group) with whom I have made major strides in machine learning reconstruction techniques in IceCube (discussed further in Section \ref{sec:event_sample}).
 
 Since the observation of delayed light indicates a muon was present in the interaction products, I will also use this information to improve the existing neutrino flavour classifier that is one of the most important inputs to my current oscillation analyses. 
 
@@ -425,17 +442,6 @@ Since the observation of delayed light indicates a muon was present in the inter
 % A natural future extension of these methods would be to also search for delayed light from neutron capture~\cite{Li:2016kra}, potentially giving the ability to distinguish electromagnetic/hadronic showers in the detector, allowing discrimination of electron and tau neutrino interactions, or neutral currents.
 
 \subsection{Detector simulation}
-
-
-\begin{wrapfigure}{R}{0.45\textwidth} %this figure will be at the right
-    \centering
-    % \vspace{-7pt}
-    \includegraphics[trim=0.0cm 0.0cm 0.cm 1.0cm, clip=true, width=\linewidth]{images/mDOM_noise.png}
-    % \end{subfigure}
-    \caption{Visualisation of a prototype GEANT4 simulation of one of the new optical sensors in the IceCube Upgrade. A radioactive decay event is shown.}
-    % \vspace{-7pt}
-    \label{fig:mDOM_sim}
-\end{wrapfigure}
 
 The uncertainty in the scattering and absorption properties of the ice are dominating factors limiting measurement precision in IceCube, but the dense instrumentation in the IceCube Upgrade (with a sensor-sensor distance smaller than the photon scattering length) will significantly reduce the dependence of GeV-scale events on these ice properties, and the accurate modelling of the sensors now becomes critical. Using data from an extensive laboratory test campaign of the new optical modules (conducted by my collaborators at Michigan State University, M{\"u}nster University and DESY-Zeuthen) for reference, I will created data-driven models of the IceCube Upgrade optical modules, including:
 
@@ -447,11 +453,22 @@ The uncertainty in the scattering and absorption properties of the ice are domin
     \item The conversion of charge to digital hit signals in the readout electronics, accounting for analog signal shaping, slow (100 MSPS) waveform sampling in the analog to digital converter (ADC), discriminator (determining whether readout is triggered), leading/trailing edge timestamp using a faster (1 GSPS) ADC, on-board waveform extraction, and data packet formation and transmission (including time synchronisation between different sensors). The reconstruction of photon arrival times depends on this chain, and in particular any offset/bias in this process must be carefully modelled as it will directly impact neutrino direction reconstruction (a key input variable to the analyses in this project).
 \end{itemize}
 
+\begin{wrapfigure}{R}{0.45\textwidth} %this figure will be at the right
+    \centering
+    % \vspace{-7pt}
+    \includegraphics[trim=0.0cm 0.0cm 0.cm 1.0cm, clip=true, width=\linewidth]{images/mDOM_noise.png}
+    % \end{subfigure}
+    \caption{Visualisation of a prototype GEANT4 simulation of one of the new optical sensors in the IceCube Upgrade. A radioactive decay event is shown.}
+    % \vspace{-7pt}
+    \label{fig:mDOM_sim}
+\end{wrapfigure}
+
 These models will also be verified using in-situ data from the sensors once deployed in the ice, and my team will travel to the South Pole to assist the detector installation, using these simulations to verify the operation of the deployed hardware in real-time. It is vital that this model development take place in parallel with the laboratory testing campaign (e.g. before the sensors are transported to the South Pole) to allow iteration on the testing procedures should the tests/modelling reveal any expected effects requiring dedicated study, and thus this work is prioritised at the start of the project and assigned to myself and a postdoc, rather than an inexperienced PhD student.
  
 Under my leadership as \textit{IceCube Upgrade simulation manager}, my collaborators and I have taken the first steps in developing simple prototypes of these simulations (see Fig. \ref{fig:mDOM_sim}), which were fundamental to demonstrating the physics potential of the IceCube Upgrade and the successful funding of the project. This, combined with my experience in high fidelity detector modelling from my Ph.D. -- where I developed simulations of the tracking detector at the Fermilab muon g-2 experiment, which were a fundamental component of the most precise high energy particle physics measurement in history~\cite{gm2_run1_result} -- and four years of experience as a professional simulations engineer in the space industry before my academic career (developing simulations of the European Space Agency's ExoMars Rover, Solar Orbiter and GAIA missions), makes me ideally suited to this task. These models will form the basis of all future analyses by the 300-person international IceCube collaboration, and thus have an enormous physics impact,  and I will publish a methods paper describing these models and the methods employed in a suitable technical journal (e.g. the \textit{Journal of Instrumentation}). \\
 
 \subsection{Event sample}
+\label{sec:event_sample}
 
 \begin{wrapfigure}{R}{0.5\textwidth} %this figure will be at the right
     \centering
@@ -544,22 +561,6 @@ I will also investigate using an alternative model-independent parameterisation 
 A signal detection in this measurement would be a momentous result, giving one of very few experimental signs of the new physics we know must exist beyond the SM and likely motivating a slew of new models from the theoretical community seeking to explain the observation. In such a case I will target the high profile journal \textit{Nature} to publish these results, whilst if no signal is observed I will place the world's first constraints on energy-dependent $CPT$-V effects in neutrinos and target the journal \textit{Physical Review Letters}.\\
 
 \subsection{Decoherence analysis}
-
-\begin{figure}
-%\begin{subfigure}[t]{0.5\textwidth}
-    \begin{subfigure}[b]{0.5\textwidth}
-    \centering
-    \includegraphics[trim=0.0cm 12.7cm 0.cm 0.2cm, clip=true, width=1.\linewidth]{images/atmo_oscillogram_randomize_flavor_n0_matter.png}
-    \caption{}
-    \end{subfigure}
-    \begin{subfigure}[b]{0.5\textwidth}
-    \centering
-    \includegraphics[trim=0.0cm 12.7cm 0.cm 0.2cm, clip=true, width=1.\linewidth]{images/atmo_oscillogram_randomize_flavor_n2_matter.png}
-    \caption{}
-    \end{subfigure}
-    \caption{Modified atmospheric neutrino oscillations vs. neutrino energy (x axis) and arrival direction (y axis) in my $\nu$-VBH interaction decoherence models, showing (a) energy-independent and (b) $E^2$ suppressed scenarios (to which accelerator experiments are blind)~\cite{PhysRevD.102.115003}. Detectable features are present across a broad range of energies.}
-    \label{fig:decoh_oscillograms}
-\end{figure}
 
 % \begin{wrapfigure}{R}{0.5\textwidth} %this figure will be at the right
 %     \centering
